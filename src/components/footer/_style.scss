@@ -1,0 +1,38 @@
+.footer {
+//   height: 40px;
+  background-color: #3b3b3b;
+  padding: 8px 16px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  .left-f {
+    ul {
+      margin-bottom: 0;
+      li {
+        display: inline;
+        list-style: none;
+        @include font-light(12px, 0px, 16px);
+        color: #828282;
+        cursor: pointer;
+      }
+    }
+  }
+  .right-f {
+    ul {
+      float: right;
+      display: flex;
+      margin-bottom: 0;
+      p {
+        @include font-light(12px, 0px, 16px);
+        color: #828282;
+        margin-bottom: 0;
+        padding-top: 6px;
+        padding-right: 6px;
+      }
+      li {
+        display: inline;
+        cursor: pointer;
+      }
+    }
+  }
+}

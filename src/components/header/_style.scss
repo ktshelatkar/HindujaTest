@@ -1,0 +1,136 @@
+.app {
+    .app-header {
+      height: 500px;
+      width: 100%;
+      background-color: $blue-1;
+      .header-banner {
+        .top-header {
+          display: flow-root;
+          .logo {
+            padding-top: 20px;
+            float: right;
+          }
+        }
+        .wid-1 {
+          max-width: 520px;
+          width: 100%;
+        }
+        .wid-2 {
+          max-width: 250px;
+          width: 100%;
+        }
+  
+        .wid-3 {
+          max-width: 356px;
+          width: 100%;
+          padding-top: 55px;
+        }
+  
+        .left-text {
+          padding-top: 82px;
+          h1 {
+            @include font-bold(70px, 0px, 65px);
+            margin-bottom: 0;
+            text-transform: uppercase;
+            &.color-white {
+              color: $white;
+            }
+            &.color-black {
+              color: $black-2;
+            }
+          }
+          h4 {
+            @include font-bold(24px, 0px, 26px);
+            color: $black-2;
+            font-style: italic;
+            font-weight: 600;
+            margin-bottom: 0;
+            padding-top: 10px;
+            span {
+              color: $red;
+            }
+          }
+          .certi {
+            padding: 15px 0;
+            display: flex;
+            ul {
+              padding-left: 0;
+              margin: 0;
+              display: flex;
+              li {
+                list-style: none;
+                border-right: 2px solid;
+                &:first-child {
+                  padding-left: 0;
+                  img {
+                    margin-left: 0;
+                  }
+                }
+                &:last-child {
+                  border-right: 0;
+                  img {
+                    margin-right: 0;
+                  }
+                }
+                img {
+                  margin: 0 15px;
+                  width: 95px;
+                  height: 95px;
+                  object-fit: contain;
+                }
+              }
+            }
+            .tg-text {
+              display: flex;
+              vertical-align: bottom;
+              flex-direction: column-reverse;
+              padding-bottom: 15px;
+              padding-left: 5px;
+              h5 {
+                @include font-bold(10px, 0px 12px);
+                margin-bottom: 0;
+                span {
+                  font-style: italic;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  letter-spacing: -1px;
+                }
+              }
+            }
+          }
+        }
+        .sprey-img {
+          img {
+            max-width: 230px;
+            height: auto;
+            object-fit: contain;
+            width: 100%;
+          }
+        }
+        .check {
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              list-style: none;
+              @include font-bold(30px, 0px, 40px);
+              position: relative;
+              padding-bottom: 15px;
+              display: flex;
+              &:before {
+                content: "";
+                background-image: url("../../static/images/icon_check.png");
+                background-size: cover;
+                background-position: center;
+                height: 40px;
+                padding-left: 44px;
+                padding-top: 3px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

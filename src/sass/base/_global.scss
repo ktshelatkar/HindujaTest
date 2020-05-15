@@ -1,0 +1,188 @@
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .app {
+    .app-header {
+      height: 275px;
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .app {
+    .app-header {
+      height: 275px !important;
+      .header-banner {
+        .wid-1 {
+          max-width: 350px !important;
+        }
+        .wid-2 {
+          max-width: 140px !important;
+        }
+        .wid-3 {
+          max-width: 230px !important;
+        }
+        .left-text {
+          padding-top: 0 !important;
+          h1 {
+            font-size: 45px !important;
+            line-height: 40px !important;
+          }
+          h4 {
+            font-size: 18px !important;
+            padding-top: 5px !important;
+          }
+          .certi {
+            margin-left: -35px;
+            ul {
+              li {
+                img {
+                  width: 55px !important;
+                  height: 55px !important;
+                  margin: 0 5px !important;
+                }
+              }
+            }
+            .tg-text {
+              padding-bottom: 10px !important;
+              padding-left: 0px !important;
+            }
+          }
+        }
+        .sprey-img {
+          margin-top: -25px;
+          img {
+            width: 130px !important;
+          }
+        }
+        .check {
+          padding-top: 48px;
+          margin-left: -20px;
+          ul {
+            li {
+              font-size: 18px !important;
+              line-height: 26px !important;
+              &:before {
+                height: 24px !important;
+                padding-left: 25px !important;
+                padding-top: 3px !important;
+                margin-right: 5px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .row {
+    &.dip {
+      .col-md-8 {
+        flex: 50%;
+        max-width: 50%;
+      }
+      .row {
+        &.smdip {
+          .col-md-8,
+          .col-md-4 {
+            &.full {
+              flex: 100%;
+              max-width: 100%;
+              margin: 0 auto;
+              display: flex;
+              .image-grid {
+                padding: 30px;
+              }
+            }
+          }
+        }
+      }
+      .emquiry-form {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .app {
+    .app-header {
+      height: 225px !important;
+      .header-banner {
+        .left-text {
+          padding-top: 0 !important;
+          h1 {
+            font-size: 20px !important;
+            line-height: 20px !important;
+          }
+          h4 {
+            font-size: 9px !important;
+            padding-top: 5px !important;
+            line-height: 12px !important;
+          }
+          .certi {
+            margin-left: -15px;
+            ul {
+              li {
+                img {
+                  width: 30px !important;
+                  height: 30px !important;
+                  margin: 0 5px !important;
+                }
+              }
+            }
+            .tg-text {
+              padding-bottom: 10px !important;
+              padding-left: 0px !important;
+            }
+          }
+        }
+        .sprey-img {
+          margin-top: -25px;
+          img {
+            width: 80px !important;
+          }
+        }
+        .check {
+          padding-top: 15px;
+          margin-left: 0px;
+          ul {
+            li {
+              font-size: 10px !important;
+              line-height: 12px !important;
+              &:before {
+                height: 12px !important;
+                padding-left: 13px !important;
+                padding-top: 3px !important;
+                margin-right: 5px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .emquiry-form {
+    margin-top: 40px!important;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .footer {
+    .left-f {
+      padding: 0 50px;
+      text-align: center;
+    }
+    .right-f {
+      ul {
+        float: inherit !important;
+        justify-content: center;
+      }
+    }
+  }
+}

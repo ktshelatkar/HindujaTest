@@ -1,0 +1,146 @@
+textarea {
+  resize: none;
+}
+.emquiry-form {
+  width: 350px;
+  height: 550px;
+  background: $white;
+  border-radius: 20px;
+  margin-top: -180px;
+  -webkit-box-shadow: -2px -20px 20px 1px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: -2px -20px 20px 1px rgba(0, 0, 0, 0.46);
+  box-shadow: -2px -20px 20px 1px rgba(0, 0, 0, 0.46);
+  padding: 20px 35px;
+  .form-header {
+    p {
+      @include font-light(13px, 0px, 20px);
+      color: $black;
+      margin-bottom: 0;
+      &.blue-text {
+        color: $blue-1;
+        font-weight: 600;
+      }
+    }
+  }
+  .form {
+    padding-top: 20px;
+    .form-control {
+      margin-bottom: 12px;
+      border-radius: 10px;
+      height: 32px;
+      padding: 5px 18px;
+      @include font-light(13px, 0px, 20px);
+      color: $black;
+      &:focus {
+        border-color: $blue-1;
+        box-shadow: none;
+      }
+      &.form-rounded {
+        border-radius: 25px;
+      }
+      &.textarea {
+        height: 50px;
+        border-radius: 25px;
+      }
+    }
+    select.custom-select-sm {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      border-radius: 25px;
+      &::before {
+        content: " ";
+        background-image: url("../../static/images/drop_icon.png");
+        background-size: 17px;
+        background-repeat: no-repeat, repeat;
+        width: 17px;
+        height: 10px;
+        position: absolute;
+        right: 15px;
+        top: 16px;
+        cursor: pointer;
+      }
+    }
+    .form-check {
+      margin-bottom: 10px;
+      padding-left: 0;
+      input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+      }
+      label {
+        position: relative;
+        cursor: pointer;
+        color: $black;
+        padding-left: 30px;
+        @include font-light(12px, 0em, 21px);
+        color: $black;
+        &:before {
+          content: "";
+          -webkit-appearance: none;
+          background-color: transparent;
+          border: 1px solid $black;
+          border-radius: 5px;
+          padding: 10px;
+          position: absolute;
+          left: 0;
+          display: inline-block;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-right: 5px;
+          border-radius: 50%;
+        }
+        .bold-url {
+          color: $black;
+        }
+      }
+      input:checked + label {
+        color: $black-1;
+      }
+      input:checked + label:before {
+        border: 1px solid $black-1;
+      }
+      input:checked + label:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 8px;
+        width: 6px;
+        height: 13px;
+        border: solid $black-1;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+    .btn-primary {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      border-radius: 25px;
+      background: $blue-1;
+      border-color: $blue-1;
+      cursor: pointer;
+      &:focus {
+        box-shadow: none;
+      }
+      &:active {
+        box-shadow: none;
+        border-color: $blue-1;
+        background-color: $blue-1;
+      }
+    }
+    .drop-icon {
+      position: relative;
+      img {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+}

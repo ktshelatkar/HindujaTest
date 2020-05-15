@@ -1,0 +1,54 @@
+.image-grid {
+    padding-top: 30px;
+    p{
+        @include font-bold(12px, 0px, 16px);
+    }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 104px 130px;
+    text-align: center;
+  }
+
+  .box {
+    padding: 15px 13px;
+      h5{
+          @include font-light(10px, 0px, 14px);
+          color: $black;
+          margin-bottom: 0;
+          &.small-t{
+              font-size: 8px;
+              line-height: 10px;
+          }
+          span{
+              text-transform: uppercase;
+              font-style: italic;
+          }
+      }
+    &.a {
+      border-right: 1px solid $black-1;
+      border-bottom: 1px solid $black-1;
+      padding-top: 0;
+      padding-left: 0;
+    }
+    &.b {
+      border-bottom: 1px solid $black-1;
+      padding-top: 0;
+      padding-right: 0;
+    }
+    &.c {
+      border-right: 1px solid $black-1;
+      padding-bottom: 0;
+      padding-left: 0;
+    }
+    &.d{
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+    img{
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+  }
+}
